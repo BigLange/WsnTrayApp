@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/inventory_list_item_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/inventory_list_item_msg_icon"
+            android:layout_width="15dp"
+            android:layout_height="50dp"
+            android:paddingBottom="18dp"
+            android:paddingTop="18dp"
+            android:src="@drawable/right_icon" />
+
+        <TextView
+            android:id="@+id/inventory_goods_name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/inventory_list_item_msg_icon"
+            android:padding="10dp"
+            android:text="@string/inventory_goods_name"
+            android:textColor="@color/colorGray_9"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/inventory_grade_name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="@string/inventory_grade_name"
+            android:textColor="@color/colorGray_9"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/inventory_number_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:text="@string/inventory_number"
+            android:textColor="@color/colorGray_9"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/inventory_list_item_id_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/inventory_goods_class_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/inventory_goods_class"
+            android:textColor="@color/colorGray_6"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/inventory_goods_class_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/inventory_goods_class_title"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/inventory_goods_class"
+            android:textColor="@color/colorGray_6"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/inventory_manufactor_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/inventory_manufactor"
+                android:textColor="@color/colorGray_6"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/inventory_manufactor_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/inventory_manufactor"
+                android:textColor="@color/colorGray_6"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/inventory_spec_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/inventory_spec"
+            android:textColor="@color/colorGray_6"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/inventory_spec_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/inventory_spec_value"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/inventory_spec"
+            android:textColor="@color/colorGray_6"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/inventory_batch_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inventory_goods_class_title"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/inventory_batch"
+            android:textColor="@color/colorGray_6"
+            android:textSize="10sp" />
+
+
+        <TextView
+            android:id="@+id/inventory_batch_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inventory_goods_class_value"
+            android:layout_toEndOf="@+id/inventory_batch_title"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/inventory_batch"
+            android:textColor="@color/colorGray_6"
+            android:textSize="10sp" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout_1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/inventory_goods_suttle_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/inventory_goods_suttle"
+                android:textColor="@color/colorGray_6"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/inventory_goods_suttler_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/inventory_goods_suttle"
+                android:textColor="@color/colorGray_6"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/inventory_validity_time_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/inventory_spec_value"
+            android:layout_marginLeft="-10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/inventory_validity_time"
+            android:textColor="@color/colorGray_6"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/inventory_validity_time_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inventory_spec_title"
+            android:layout_toStartOf="@id/inventory_validity_time_value"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/inventory_validity_time"
+            android:textColor="@color/colorGray_6"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/inventory_childbirth_data_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inventory_batch_title"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/inventory_childbirth_data"
+            android:textColor="@color/colorGray_6"
+            android:textSize="10sp" />
+
+
+        <TextView
+            android:id="@+id/inventory_childbirth_data_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inventory_batch_value"
+            android:layout_toEndOf="@+id/inventory_childbirth_data_title"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/inventory_childbirth_data"
+            android:textColor="@color/colorGray_6"
+            android:textSize="10sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout_2"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/inventory_storage_condition_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/inventory_storage_condition"
+                android:textColor="@color/colorGray_6"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/inventory_storage_condition_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/inventory_storage_condition"
+                android:textColor="@color/colorGray_6"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

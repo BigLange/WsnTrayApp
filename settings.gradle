@@ -1,0 +1,2 @@
+include ':app', ':adapterlibry'
+project(':adapterlibry').projectDir = new File('adapterlib')

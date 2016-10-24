@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.think.wsntrayapp.SelectTrayActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.think.wsntrayapp.base_view.HeadView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text="@string/tray_activity_title"></com.example.think.wsntrayapp.base_view.HeadView>
+
+        <Button
+            android:id="@+id/input_tray_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+            android:minHeight="0dp"
+            android:background="@color/colorGray_9"
+            android:textColor="@color/colorWhite"
+            android:text="@string/input_tray_id"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/select_tray_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"></ListView>
+</LinearLayout>

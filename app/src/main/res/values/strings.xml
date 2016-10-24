@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">智能托盘</string>
+
+    <!--托盘界面-->
+    <string name="tray_activity_title">选择盘点项</string>
+    <string name="tray_tile">托盘1</string>
+    <string name="input_tray_id">托盘录入</string>
+    <!--托盘界面-->
+
+    <!--盘点界面-->
+    <string name="inventory_title">托盘信息</string>
+    <string name="inventory_goods_name">商品名称</string>
+    <string name="inventory_grade_name">牌号/材质</string>
+    <string name="inventory_number">数量</string>
+    <string name="inventory_goods_class">商品大类：</string>
+    <string name="inventory_manufactor">厂家：</string>
+    <string name="inventory_spec">规格：</string>
+    <string name="inventory_batch">捆包号/批次：</string>
+    <string name="inventory_goods_suttle">净重：</string>
+    <string name="inventory_validity_time">有效期：</string>
+    <string name="inventory_childbirth_data">生产日期：</string>
+    <string name="inventory_storage_condition">存储条件：</string>
+    <!--盘点界面-->
+
+    <!--写入托盘ID界面-->
+    <string name="writer_tray_id_title">写入托盘ID</string>
+    <string name="writer_tray_id_btn">写入</string>
+    <!--写入托盘ID界面-->
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_writer_tray_id"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.think.wsntrayapp.WriterTrayIdActivity">
+
+    <com.example.think.wsntrayapp.base_view.HeadView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:text="@string/writer_tray_id_title"></com.example.think.wsntrayapp.base_view.HeadView>
+
+    <EditText
+        android:id="@+id/write_id_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/write_nfc_id_edit_style"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/write_id_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:background="@drawable/write_nfc_id_btn_style"
+        android:text="@string/writer_tray_id_btn"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textColor="#fff"/>
+
+</LinearLayout>
